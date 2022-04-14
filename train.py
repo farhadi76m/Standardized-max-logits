@@ -24,9 +24,9 @@ import random
 # Argument Parser
 parser = argparse.ArgumentParser(description='Semantic Segmentation')
 parser.add_argument('--lr', type=float, default=0.01)
-parser.add_argument('--arch', type=str, default='network.deepv3.DeepWV3Plus',
+parser.add_argument('--arch', type=str, default='network.deepv3.DeepV3Plus',
                     help='Network architecture. We have DeepSRNX50V3PlusD (backbone: ResNeXt50) \
-                    and deepWV3Plus (backbone: WideResNet38).')
+                    and deepV3Plus (backbone: WideResNet38).')
 parser.add_argument('--dataset', nargs='*', type=str, default=['cityscapes'],
                     help='a list of datasets; cityscapes')
 parser.add_argument('--image_uniform_sampling', action='store_true', default=False,
