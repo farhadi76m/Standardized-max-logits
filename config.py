@@ -36,7 +36,7 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-
+import os
 import torch
 
 
@@ -67,7 +67,8 @@ __C.STRICTBORDERCLASS = None
 #Attribute Dictionary for Dataset
 __C.DATASET = AttrDict()
 #Cityscapes Dir Location
-__C.DATASET.CITYSCAPES_DIR = '/home/nas1_userB/dataset/cityscapes'
+#__C.DATASET.CITYSCAPES_DIR = '/home/nas1_userB/dataset/cityscapes'
+__C.DATASET.CITYSCAPES_DIR = os.path.join(os.getcwd(), 'cityscapes')
 #SDC Augmented Cityscapes Dir Location
 __C.DATASET.CITYSCAPES_AUG_DIR = ''
 #Number of splits to support
